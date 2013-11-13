@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 			List<Route> routes = new ArrayList<Route>();
 			routes.add(r1);
 
-			// Since version 3.0 Android don't permit us do networking access from UIThread 
+			// Since version 3.0 Android don't permit us to do networking access from UIThread 
 			new RouteAsync(token, new RouteAsyncCallback() {
 				@Override
 				public void onResult(List<RouteInfoResume> routes) {
